@@ -62,8 +62,12 @@
   width: 550px;
 }
 
+<<<<<<< HEAD
 /* change here */
 .footer-sec-menu h4 {
+=======
+.footer-sec-menu .menu-1 h4 {
+>>>>>>> parent of f1f7ba7 (update: footer.css)
   font: 700 18px "poppins", sans-serif;
   line-height: 27px;
   color: #f4f4f4;
