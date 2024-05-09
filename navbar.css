@@ -42,6 +42,7 @@
   display: flex;
   gap: 40px;
   padding: 10px;
+  position: relative;
 }
 
 .nav-list a {
@@ -60,6 +61,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  position: relative;
 }
 
 .nav-btn .btn-base {
@@ -90,4 +92,76 @@
 
 .nav-btn a {
   text-decoration: none;
+}
+
+/* btn close-open */
+
+.nav-container .close-list,
+.nav-container .open-list {
+  position: absolute;
+  color: #101928;
+  cursor: pointer;
+  font-size: 40px;
+
+  /* display: none; */
+  font: bold 30px "Inter", sans-serif;
+}
+
+.open-list {
+  /* top: 50%; */
+  right: 20px;
+  transform: rotate(90deg);
+}
+
+.close-list {
+  top: 22px;
+  right: 20px;
+  /* font: bold 20px "Inter", sans-serif; */
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 926px) {
+  .nav-container {
+    max-width: 90%;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    right: -100vw;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    background-color: #ffffff;
+  }
+
+  .nav-list a {
+    font: bold 25px "Inter", sans-serif;
+    padding: 20px;
+  }
+
+  .nav-list a:hover {
+    text-decoration: none;
+    color: #101928;
+    font: bold 30px "Inter", sans-serif;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .close-list,
+  .open-list {
+    display: block;
+  }
+
+  #check:checked ~ .nav-list {
+    right: 0;
+  }
 }
