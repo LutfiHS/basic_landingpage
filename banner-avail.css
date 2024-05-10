@@ -19,6 +19,10 @@
   gap: 0px 80px;
 }
 
+.avail-text-mobile {
+  display: none;
+}
+
 /* avail-card */
 
 .avail-card {
@@ -62,8 +66,6 @@
 }
 
 .card-top {
-  /* position: relative; */
-  /* z-index: 9900; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -76,7 +78,6 @@
 
   background-size: cover;
   background-position: center center;
-  /* box-shadow: inset 0px -100px 18px -15px rgba(0, 0, 0, 0.1); */
 }
 
 .card-top-tag {
@@ -188,4 +189,61 @@
   align-items: center;
   text-decoration: none;
   font: 700 18px "Inter", sans-serif;
+}
+
+@media screen and (max-width: 926px) {
+  .wrap-avail {
+    width: 100%;
+    height: 100%;
+  }
+
+  .avail-containter {
+    max-width: 80%;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .avail-text {
+    display: none;
+  }
+
+  .avail-text-mobile {
+    display: block;
+  }
+
+  .avail-text-mobile {
+    width: 100%;
+    height: 357px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .avail-card {
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .avail-card-1,
+  .avail-card-2,
+  .avail-card-3,
+  .avail-card-4 {
+    width: 100%;
+    height: 345.08px;
+  }
+
+  .card-top {
+    width: 100%;
+    height: 240.57px;
+  }
+
+  .avail-text-2 {
+    width: 100%;
+  }
 }

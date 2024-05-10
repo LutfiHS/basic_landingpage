@@ -85,3 +85,33 @@
   line-height: 30px;
   width: 494px;
 }
+
+@media screen and (max-width: 926px) {
+  .wrap-testimonial {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .test-container {
+    max-width: 80%;
+    height: 100%;
+  }
+
+  .test-card {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .test-card .card-base {
+    width: 100%;
+    height: 250px;
+    padding: 20px 20px;
+  }
+  .card-base .comments {
+    width: 100%;
+    font-size: 15px;
+  }
+}

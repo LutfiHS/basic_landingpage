@@ -94,3 +94,30 @@
   gap: 10px;
   height: 168px;
 }
+
+@media screen and (max-width: 926px) {
+  .wrap-footer {
+    height: 100%;
+  }
+
+  .footer-container {
+    height: auto;
+    flex-direction: column;
+    max-width: 80%;
+    padding: 40px;
+    /* gap: 50px; */
+  }
+
+  .footer-sec-about {
+    width: 100%;
+  }
+
+  .footer-sec-about p {
+    width: 100%;
+  }
+
+  .footer-sec-menu {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

@@ -139,13 +139,13 @@
     justify-content: center;
     gap: 20px;
     height: 600px;
-    /* top: 100px; */
+    width: 100%;
   }
 
   .banner-slogan h1 {
     color: #101928;
     font: bold 54px "Inter", sans-serif;
-    width: 80vw;
+    width: 100%;
   }
 
   .banner-slogan p {
