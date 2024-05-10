@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap-testimonial {
+  width: 100%;
+  height: 440px;
+  background-color: #ffffff;
+}
+
+.test-container {
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 40px;
+}
+
+.test-container p {
+  font: 700 40px "mada", sans-serif;
+  line-height: 52px;
+  width: 224px;
+}
+
+.test-card {
+  width: 100%;
+  height: 268px;
+  background-color: #ffffff;
+  padding: 40px 24px;
+  gap: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.test-card .card-base {
+  width: 588px;
+  height: 268px;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 0px 40px;
+  gap: 24px;
+}
+
+.card-base .profile {
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.profile img {
+  width: 48px;
+  height: 48px;
+  align-items: center;
+}
+
+.profile .text p:nth-child(1) {
+  font: 700 18px "poppins", sans-serif;
+  font-weight: 27px;
+  color: #000000;
+}
+
+.profile .text p:nth-child(2) {
+  font: 400 14px "poppins", sans-serif;
+  font-weight: 27px;
+  color: #969696;
+}
+
+.card-base .ratting {
+  width: 152px;
+  height: 24px;
+}
+
+.card-base .comments {
+  font: 400 18px "poppins", sans-serif;
+  line-height: 30px;
+  width: 494px;
+}
+
+@media screen and (max-width: 926px) {
+  .wrap-testimonial {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .test-container {
+    max-width: 80%;
+    height: 100%;
+  }
+
+  .test-card {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .test-card .card-base {
+    width: 100%;
+    height: 250px;
+    padding: 20px 20px;
+  }
+  .card-base .comments {
+    width: 100%;
+    font-size: 15px;
+  }
+}

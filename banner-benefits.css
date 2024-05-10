@@ -106,3 +106,45 @@
   gap: 20px;
   padding-right: 150px;
 }
+
+@media screen and (max-width: 926px) {
+  .wrap-benefits {
+    height: auto;
+  }
+
+  .container-benefits {
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 50px;
+    max-width: 80%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .benefits-detail {
+    width: 80%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefits-detail p:nth-child(3) {
+    width: 100%;
+  }
+
+  .benefits-card {
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .benefits-card .benefits-card-sec {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefits-card-btn {
+    display: none;
+  }
+}
