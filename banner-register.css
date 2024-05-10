@@ -126,7 +126,7 @@
   }
 
   .banner-container {
-    max-width: 90%;
+    max-width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -139,6 +139,7 @@
     justify-content: center;
     gap: 20px;
     height: 600px;
+    /* top: 100px; */
   }
 
   .banner-slogan h1 {
